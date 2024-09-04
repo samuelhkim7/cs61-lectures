@@ -1,6 +1,6 @@
 # compiler flags
-CFLAGS := -std=gnu2x -Wall -Wextra -Wshadow -g $(DEFS) $(CFLAGS)
-CXXFLAGS := -std=gnu++2a -Wall -Wextra -Wshadow -g $(DEFS) $(CXXFLAGS)
+CFLAGS := -std=gnu2x -Wall -Wextra -Wshadow -Wvla -g $(DEFS) $(CFLAGS)
+CXXFLAGS := -std=gnu++2a -Wall -Wextra -Wshadow -Wvla -g $(DEFS) $(CXXFLAGS)
 
 O ?= -O3
 ifeq ($(filter 0 1 2 3 s z g fast,$(O)),$(strip $(O)))
