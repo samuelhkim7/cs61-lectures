@@ -13,6 +13,10 @@ int main(int argc, char* argv[]) {
         array[i] = std::stoi(argv[i + 1]);
     }
 
+    for (int i = 0; i != nargs; ++i) {
+        print_bytes(&array[i], sizeof(int));
+    }
+
     // add 'em up
     int sum = 0;
     for (int i = 0; i != nargs; ++i) {

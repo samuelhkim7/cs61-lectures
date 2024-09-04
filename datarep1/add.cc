@@ -14,6 +14,8 @@ int main(int argc, char* argv[]) {
     int a = std::stoi(argv[1]);
     int b = std::stoi(argv[2]);
 
+    print_bytes((void *) add, sizeof(int));
+
     // print their sum
     printf("%d + %d = %d\n", a, b, add(a, b));
 }
